@@ -1,4 +1,6 @@
-package me.kozyar;
+package me.kozyar.DAO;
+
+import me.kozyar.Employee;
 
 import java.util.List;
 

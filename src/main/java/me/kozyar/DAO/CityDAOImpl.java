@@ -1,50 +1,52 @@
-package me.kozyar;
+package me.kozyar.DAO;
 
+import me.kozyar.City;
+import me.kozyar.Employee;
+import me.kozyar.HibernateSessionFactoryUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import java.util.List;
 
-public class EmployeeDAOImpl implements EmployeeDAO{
-    // добавление объекта
+public class CityDAOImpl implements CityDAO{
     @Override
-    public void create(Employee employee) {
+    public void create(City city) {
         try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();){
             Transaction transaction = session.beginTransaction();
-            session.save(employee);
+            session.save(city);
             transaction.commit();
         }
     }
 
     // получение объекта по id
     @Override
-    public Employee readById(int id) {
-        return HibernateSessionFactoryUtil.getSessionFactory().openSession().get(Employee.class, id);
+    public City readById(int id) {
+        return HibernateSessionFactoryUtil.getSessionFactory().openSession().get(City.class, id);
     }
 
     // получение списка всех объектов
     @Override
-    public List<Employee> readAll() {
-        List<Employee> employeeList = (List<Employee>) HibernateSessionFactoryUtil.getSessionFactory().openSession().createQuery("From Employee").list();
-        return employeeList;
+    public List<City> readAll() {
+        List<City> cityList = (List<City>) HibernateSessionFactoryUtil.getSessionFactory().openSession().createQuery("From City").list();
+        return cityList;
     }
 
     // изменение объекта
     @Override
-    public void updateEmployee(Employee employee) {
+    public void updateCity(City city) {
         try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()) {
             Transaction transaction = session.beginTransaction();
-            session.update(employee);
+            session.update(city);
             transaction.commit();
         }
     }
 
     // удаление оюъекта
     @Override
-    public void delete(Employee employee) {
+    public void delete(City city) {
         try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()) {
             Transaction transaction = session.beginTransaction();
-            session.delete(employee);
+            session.delete(city);
             transaction.commit();
         }
     }
