@@ -17,7 +17,8 @@ public class Employee {
     @Column(name = "age")
     private int age;
 
-    @ManyToOne(optional = false)
+    @ManyToOne
+    @JoinColumn(name = "city_id")
     private City city;
 
     public Employee() {

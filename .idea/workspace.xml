@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42662c81-a8d9-4228-8c07-5fd3c64af900" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kozyar/DAO/CityDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kozyar/DAO/CityDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/kozyar/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kozyar/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/kozyar/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kozyar/City.java" afterDir="false" />
+    <list default="true" id="42662c81-a8d9-4228-8c07-5fd3c64af900" name="Changes" comment="second commit">
       <change beforePath="$PROJECT_DIR$/src/main/java/me/kozyar/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kozyar/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/kozyar/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kozyar/DAO/EmployeeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/kozyar/EmployeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kozyar/DAO/EmployeeDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/kozyar/HibernateSessionFactoryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kozyar/HibernateSessionFactoryUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679002415582</updated>
       <workItem from="1679002416985" duration="1953000" />
-      <workItem from="1679139819670" duration="10719000" />
+      <workItem from="1679139819670" duration="11029000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1679003335375</created>
@@ -96,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679003335375</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="second commit">
+      <created>1679151760837</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679151760837</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +111,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
 </project>
