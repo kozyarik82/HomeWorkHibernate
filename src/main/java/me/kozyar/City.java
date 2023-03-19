@@ -1,19 +1,31 @@
 package me.kozyar;
 
-public class City {
-    private int id;
-    private String cityName;
+import javax.persistence.*;
+import java.util.List;
 
-    public City(int id, String cityName) {
+@Entity
+@Table(name = "city")
+public class City {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    private String cityName;
+    @OneToMany(mappedBy = "city", cascade = CascadeType.ALL)
+    private List<Employee> employees;
+
+    public City() {
+    }
+
+    public City(Integer id, String cityName) {
         this.id = id;
         this.cityName = cityName;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

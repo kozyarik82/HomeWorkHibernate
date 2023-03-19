@@ -1,14 +1,13 @@
 package me.kozyar;
 
 import javax.persistence.*;
-
+import java.util.Objects;
 @Entity
 @Table(name = "employee")
 public class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    private Integer id;
     @Column(name = "first_name")
     private String firstName;
     @Column(name = "last_name")
@@ -17,21 +16,22 @@ public class Employee {
     private String gender;
     @Column(name = "age")
     private int age;
-    @Column(name = "city_id")
-    private int city;
+
+    @ManyToOne
+    @JoinColumn(name = "city_id")
+    private City city;
 
     public Employee() {
     }
 
-    public Employee(String firstName, String lastName, String gender, int age, int city) {
+    public Employee(String firstName, String lastName, String gender, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
         this.age = age;
-        this.city = city;
     }
 
-    public Employee(int id, String firstName, String lastName, String gender, int age, int city) {
+    public Employee(Integer id, String firstName, String lastName, String gender, int age, City city) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -40,11 +40,11 @@ public class Employee {
         this.city = city;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -79,12 +79,6 @@ public class Employee {
     public void setAge(int age) {
         this.age = age;
     }
-
-    public int getCity() {
-        return city;
-    }
-
-    public void setCity(int city) {
-        this.city = city;
-    }
 }
+
+
